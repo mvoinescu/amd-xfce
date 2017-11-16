@@ -1,5 +1,5 @@
 #!/bin/bash
-#set -e
+set -e
 ##################################################################################################################
 # Author 	: 	Erik Dubois
 # Website 	: 	https://www.erikdubois.be
@@ -13,29 +13,22 @@
 #
 ##################################################################################################################
 
-# checking if I have the latest files from github
-echo "Checking for newer files online first"
-git pull
 
-# Below command will backup everything inside the project folder
-git add --all .
+sudo pacman -S --noconfirm --needed cups cups-pdf
 
-# Give a comment to the commit if you want
-echo "####################################"
-echo "Write your commit comment!"
-echo "####################################"
+#first try if you can print without footmatic
+#sudo pacman -S foomatic-db-engine --noconfirm --needed
+#sudo pacman -S foomatic-db foomatic-db-ppds foomatic-db-nonfree-ppds foomatic-db-gutenprint-ppds --noconfirm --needed
+sudo pacman -S ghostscript gsfonts gutenprint --noconfirm --needed
+sudo pacman -S gtk3-print-backends --noconfirm --needed
+sudo pacman -S libcups --noconfirm --needed
+sudo pacman -S hplip --noconfirm --needed
+sudo pacman -S system-config-printer --noconfirm --needed
 
-read input
+sudo systemctl enable org.cups.cupsd.service
 
-# Committing to the local repository with a message containing the time details and commit text
-
-git commit -m "$input"
-
-# Push the local files to github
-
-git push -u origin master
-
+echo "After rebooting it will work"
 
 echo "################################################################"
-echo "###################    Git Push Done      ######################"
+echo "#########   printer management software installed     ##########"
 echo "################################################################"

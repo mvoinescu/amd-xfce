@@ -1,5 +1,5 @@
 #!/bin/bash
-#set -e
+set -e
 ##################################################################################################################
 # Author 	: 	Erik Dubois
 # Website 	: 	https://www.erikdubois.be
@@ -13,29 +13,35 @@
 #
 ##################################################################################################################
 
-# checking if I have the latest files from github
-echo "Checking for newer files online first"
-git pull
+# software from AUR (Arch User Repositories)
+# https://aur.archlinux.org/packages/
 
-# Below command will backup everything inside the project folder
-git add --all .
+#giving tmp folder extra gb in order not to run out of disk space while installing software
+#only if you run into issues with that
+#sudo mount -o remount,size=5G,noatime /tmp
 
-# Give a comment to the commit if you want
-echo "####################################"
-echo "Write your commit comment!"
-echo "####################################"
+echo "DESKTOP SPECIFIC APPLICATIONS"
 
-read input
+echo "Installing category Accessories"
 
-# Committing to the local repository with a message containing the time details and commit text
+echo "Installing category Development"
 
-git commit -m "$input"
+echo "Installing category Education"
 
-# Push the local files to github
+echo "Installing category Games"
 
-git push -u origin master
+echo "Installing category Graphics"
 
+echo "Installing category Internet"
+
+echo "Installing category Multimedia"
+
+echo "Installing category Office"
+
+echo "Installing category Other"
+
+echo "Installing category System"
 
 echo "################################################################"
-echo "###################    Git Push Done      ######################"
+echo "####    Software from Arch Linux Repository installed     ######"
 echo "################################################################"

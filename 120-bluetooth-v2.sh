@@ -1,5 +1,5 @@
 #!/bin/bash
-#set -e
+set -e
 ##################################################################################################################
 # Author 	: 	Erik Dubois
 # Website 	: 	https://www.erikdubois.be
@@ -13,29 +13,25 @@
 #
 ##################################################################################################################
 
-# checking if I have the latest files from github
-echo "Checking for newer files online first"
-git pull
+# installing bluetooth software
 
-# Below command will backup everything inside the project folder
-git add --all .
+sudo pacman -S --noconfirm --needed pulseaudio-bluetooth
+sudo pacman -S --noconfirm --needed bluez
+sudo pacman -S --noconfirm --needed bluez-libs
+sudo pacman -S --noconfirm --needed bluez-utils
+sudo pacman -S --noconfirm --needed bluez-firmware
+#in gnome-budgie we rely on this application
+sudo pacman -S --noconfirm --needed gnome-bluetooth
+#sudo pacman -S --noconfirm --needed blueberry
 
-# Give a comment to the commit if you want
-echo "####################################"
-echo "Write your commit comment!"
-echo "####################################"
+sudo systemctl enable bluetooth.service
+sudo systemctl start bluetooth.service
 
-read input
-
-# Committing to the local repository with a message containing the time details and commit text
-
-git commit -m "$input"
-
-# Push the local files to github
-
-git push -u origin master
+echo "reboot your system then ..."
+echo "set with bluetooth icon in bottom right corner"
+echo "change to have a2dp if needed"
 
 
 echo "################################################################"
-echo "###################    Git Push Done      ######################"
+echo "###################    T H E   E N D      ######################"
 echo "################################################################"

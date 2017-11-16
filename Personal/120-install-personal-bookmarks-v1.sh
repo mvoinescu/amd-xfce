@@ -3,18 +3,22 @@ set -e
 ##################################################################################################################
 # Author 	: 	Erik Dubois
 # Website 	: 	https://www.erikdubois.be
+# Website	:	https://www.archmerge.info
 # Website	:	https://www.archmerge.com
 # Website	:	https://www.archmerged.com
+# Website	:	https://www.archmergeforum.com
 ##################################################################################################################
 #
 #   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
 #
 ##################################################################################################################
 
-# use mirror if you have a slow connection
-sudo pacman -Syyu
-sudo pacman -S lightdm lightdm-gtk-greeter --noconfirm --needed
-sudo pacman -S xfce4 --noconfirm --needed
-sudo pacman -S xfce4-goodies --noconfirm --needed
-sudo systemctl enable lightdm.service -f
-sudo systemctl set-default graphical.target
+echo "Copy bookmarks"
+
+cp -r settings/bookmarks/* ~/.config/gtk-3.0/
+
+
+
+echo "################################################################"
+echo "#########      bookmarks  copied                ################"
+echo "################################################################"
