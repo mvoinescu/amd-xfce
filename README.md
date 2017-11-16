@@ -1,4 +1,4 @@
-# ArchMergeD Budgie desktop
+# ArchMergeD XFCE desktop
 
 # Start by installing the latest ArchMergeD installation
 
