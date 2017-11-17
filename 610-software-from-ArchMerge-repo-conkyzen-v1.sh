@@ -19,6 +19,7 @@ sudo pacman -S archmerge-pipemenus-git --noconfirm --needed
 sudo pacman -S jq --noconfirm --needed
 
 sh AUR/install-yad-v*.sh
+sh AUR/install-conky-lua-nv-v*.sh
 
 echo "################################################################"
 echo "####     Software from ArchMerge Repository installed       ####"
