@@ -13,6 +13,8 @@ set -e
 #
 ##################################################################################################################
 
+echo "Installing xfce settings"
+
 [ -d $HOME"/.config/xfce4" ] || mkdir -p $HOME"/.config/xfce4"
 cp -rf settings/xfce4/* ~/.config/xfce4/
 

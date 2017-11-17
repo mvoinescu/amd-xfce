@@ -15,6 +15,8 @@ set -e
 
 echo "Copy/pasting config to config folder"
 
+[ -d $HOME"/.config/variety" ] || mkdir -p $HOME"/.config/variety"
+
 cp settings/variety/* ~/.config/variety/
 
 
