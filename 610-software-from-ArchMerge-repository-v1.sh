@@ -15,8 +15,8 @@ set -e
 
 echo "ArchMerge Repository"
 
-sudo pacman -S archmerge-plank-themes-git
-sudo pacman -S archmerge-arc-themes-git
+sudo pacman -S archmerge-plank-themes-git --noconfirm --needed
+sudo pacman -S archmerge-arc-themes-git --noconfirm --needed
 
 echo "################################################################"
 echo "####     Software from ArchMerge Repository installed       ####"
