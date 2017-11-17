@@ -16,7 +16,7 @@ set -e
 echo "Copy/pasting config to config folder"
 
 [ -d $HOME"/.config/Thunar" ] || mkdir -p $HOME"/.config/Thunar"
-cp settings/thunar/* ~/.config/Thunar/
+cp settings/Thunar/* ~/.config/Thunar/
 
 
 
