@@ -42,6 +42,8 @@ echo "Installing category Other"
 
 echo "Installing category System"
 
+sudo pacman -S --noconfirm --needed dmenu
+
 echo "################################################################"
 echo "####    Software from Arch Linux Repository installed     ######"
 echo "################################################################"
