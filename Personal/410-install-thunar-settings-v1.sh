@@ -13,7 +13,8 @@ set -e
 #
 ##################################################################################################################
 
-cp -rf settings/Thunar/ ~/.config/Thunar
+[ -d $HOME"/.config/Thunar" ] || mkdir -p $HOME"/.config/Thunar"
+cp -rf settings/Thunar/* ~/.config/Thunar
 
 echo "################################################################"
 echo "#########      xfce files copied                ################"
