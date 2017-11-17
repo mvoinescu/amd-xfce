@@ -13,14 +13,12 @@ set -e
 #
 ##################################################################################################################
 
-echo "Copy bookmarks"
+echo "Copy/pasting config to config folder"
 
-[ -d $HOME"/.config/gtk-3.0" ] || mkdir -p $HOME"/.config/gtk-3.0"
-
-cp -r settings/bookmarks/* ~/.config/gtk-3.0/
+cp settings/thunar/* ~/.config/Thunar/
 
 
 
 echo "################################################################"
-echo "#########      bookmarks  copied                ################"
+echo "#########       variety installed               ################"
 echo "################################################################"
