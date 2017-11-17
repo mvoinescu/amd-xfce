@@ -16,6 +16,7 @@ set -e
 echo "ArchMerge Repository"
 
 sudo pacman -S archmerge-pipemenus-git --noconfirm --needed
+sudo pacman -S jq --noconfirm --needed
 
 sh AUR/install-yad-v*.sh
 
