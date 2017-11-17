@@ -15,7 +15,9 @@ set -e
 
 echo "ArchMerge Repository"
 
-sudo pacman -S archmerge-plank-themes-git
+sudo pacman -S archmerge-pipemenus-git --noconfirm --needed
+
+sh AUR/install-yad-v*.sh
 
 echo "################################################################"
 echo "####     Software from ArchMerge Repository installed       ####"
