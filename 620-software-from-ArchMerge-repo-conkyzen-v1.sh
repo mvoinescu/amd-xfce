@@ -21,10 +21,17 @@ sudo pacman -S archmerge-conky-collection-git --noconfirm --needed
 
 sh AUR/install-yad-v*.sh
 
-echo "We will now remove conky so we can install a conky version that"
-echo "supports conky's and LUA"
+echo "We will now remove the package conky so we can install a conky"
+echo " version that supports conky's and LUA - clocks, dials, ..."
 
-sudo pacman -R conky
+#remove conky package if installed
+package="conky"
+
+if pacman -Qi $package &> /dev/null; then
+
+        sudo pacman -R conky
+
+fi
 
 sh AUR/install-conky-lua-nv-v*.sh
 
