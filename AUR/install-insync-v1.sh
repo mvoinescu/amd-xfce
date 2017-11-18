@@ -14,7 +14,7 @@ set -e
 ##################################################################################################################
 
 echo "Do not forget to change with qtconfig-qt4"
-echo " to something else than gkt+ and save "
+echo " to something else than gtk+ and save "
 echo " then in terminal -- insync start"
 
 echo "Press enter to continue"; read dummy;
@@ -37,7 +37,7 @@ else
 
 		echo "Installing with yaourt"
 		yaourt -S --noconfirm $package
-		
+
 	elif pacman -Qi pacaur &> /dev/null; then
 
 		echo "Installing with pacaur"
