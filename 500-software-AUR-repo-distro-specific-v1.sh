@@ -15,7 +15,7 @@ set -e
 
 echo "DESKTOP SPECIFIC APPLICATIONS"
 
-
+sh AUR/install-mugshot-v*.sh
 
 echo "################################################################"
 echo "####        Software from AUR Repository installed        ######"
