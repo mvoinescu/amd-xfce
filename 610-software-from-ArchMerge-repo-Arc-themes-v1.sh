@@ -15,7 +15,6 @@ set -e
 
 echo "ArchMerge Repository"
 
-sudo pacman -S archmerge-plank-themes-git --noconfirm --needed
 sudo pacman -S archmerge-arc-themes-git --noconfirm --needed
 
 echo "################################################################"
