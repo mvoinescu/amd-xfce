@@ -17,6 +17,7 @@ echo "ArchMerge Repository"
 
 sudo pacman -S archmerge-pipemenus-git --noconfirm --needed
 sudo pacman -S jq --noconfirm --needed
+sudo pacman -S archmerge-conky-collection-git --noconfirm --needed
 
 sh AUR/install-yad-v*.sh
 
