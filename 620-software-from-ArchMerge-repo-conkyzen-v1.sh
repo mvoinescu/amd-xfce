@@ -19,6 +19,14 @@ sudo pacman -S archmerge-pipemenus-git --noconfirm --needed
 sudo pacman -S jq --noconfirm --needed
 
 sh AUR/install-yad-v*.sh
+
+echo "We will now remove conky so we can install a conky version that"
+echo "supports conky's and LUA"
+
+read t
+
+sudo pacman -R conky
+
 sh AUR/install-conky-lua-nv-v*.sh
 
 echo "################################################################"
