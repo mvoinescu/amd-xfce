@@ -29,7 +29,7 @@ package="conky"
 
 if pacman -Qi $package &> /dev/null; then
 
-        sudo pacman -R conky
+        sudo pacman -R conky --noconfirm
 
 fi
 
