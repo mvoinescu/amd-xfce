@@ -136,6 +136,7 @@ sudo pacman -S --noconfirm --needed tumbler
 sudo pacman -S --noconfirm --needed vnstat
 sudo pacman -S --noconfirm --needed wget
 sudo pacman -S --noconfirm --needed unclutter
+sudo pacman -S --noconfirm --needed rxvt-unicode
 sudo pacman -S --noconfirm --needed xdg-user-dirs
 #sudo pacman -S --noconfirm --needed
 
