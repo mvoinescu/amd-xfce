@@ -19,6 +19,14 @@ sudo pacman -S archmerge-pipemenus-git --noconfirm --needed
 sudo pacman -S jq --noconfirm --needed
 sudo pacman -S archmerge-conky-collection-git --noconfirm --needed
 
+echo "Installing fonts for the conky's"
+
+sudo pacman -S --noconfirm --needed adobe-source-sans-pro-fonts
+sudo pacman -S --noconfirm --needed ttf-dejavu
+sudo pacman -S --noconfirm --needed ttf-droid
+sudo pacman -S --noconfirm --needed ttf-roboto
+
+
 sh AUR/install-yad-v*.sh
 
 echo "We will now remove the package conky so we can install a conky"
