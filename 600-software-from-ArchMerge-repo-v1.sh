@@ -25,7 +25,7 @@ sudo pacman -S archmerge-iso-skel-git --noconfirm --needed
 #sudo pacman -S archmerge-obmenu-generator-git --noconfirm --needed
 #sudo pacman -S archmerge-openbox-configs-git --noconfirm --needed
 #sudo pacman -S archmerge-openbox-themes-git --noconfirm --needed
-#sudo pacman -S archmerge-pipemenus-git --noconfirm --needed
+sudo pacman -S archmerge-pipemenus-git --noconfirm --needed
 sudo pacman -S archmerge-plank-themes-git --noconfirm --needed
 sudo pacman -S archmerge-root-git --noconfirm --needed
 sudo pacman -S archmerge-slimlock-themes-git --noconfirm --needed
