@@ -13,7 +13,7 @@ set -e
 #
 ##################################################################################################################
 
-package="vivaldi"
+package="conky-lua-archers"
 
 #----------------------------------------------------------------------------------
 
@@ -31,7 +31,7 @@ else
 
 		echo "Installing with yaourt"
 		yaourt -S --noconfirm $package
-		
+
 	elif pacman -Qi pacaur &> /dev/null; then
 
 		echo "Installing with pacaur"

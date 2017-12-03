@@ -23,6 +23,7 @@ set -e
 
 echo "Installing category Accessories"
 
+sh AUR/install-conky-lua-archers-v*.sh
 sh AUR/install-cool-retro-term-v*.sh
 sh AUR/install-mintstick-git-v*.sh
 sh AUR/install-temps-v*.sh
@@ -71,7 +72,7 @@ sh AUR/install-conky-aureola-v*.sh
 sh AUR/install-downgrade-v*.sh
 sh AUR/install-neofetch-v*.sh
 sh AUR/install-numix-circle-icon-theme-git-v*.sh
-sh AUR/install-pamac-v*.sh
+sh AUR/install-pamac-aur-v*.sh
 sh AUR/install-paper-icon-theme-git-v*.sh
 sh AUR/install-papirus-icon-theme-git-v*.sh
 sh AUR/install-sardi-icons-v*.sh

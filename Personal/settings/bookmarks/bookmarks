@@ -17,5 +17,6 @@ file:///home/erik/.config/variety variety
 file:///home/erik/.config/i3 i3
 file:///home/erik/.config .config
 file:///home/erik/.local .local
+file:///etc/skel skel
 file:///opt opt
 file:///tmp tmp

@@ -147,21 +147,6 @@ sudo pacman -S --noconfirm --needed unace unrar zip unzip sharutils  uudeview  a
 
 ###############################################################################################
 
-#avoiding an error if you have installed conky-lua-nv and rerun this script later
-#that tries to install the conky package
-package="conky-lua-nv"
-
-if pacman -Qi $package &> /dev/null; then
-
-	echo "################################################################"
-	echo "################## "$package" is already installed"
-	echo "################################################################"
-
-else
-
-  sudo pacman -S --noconfirm --needed conky
-
-fi
 
 echo "################################################################"
 echo "#### Software from standard Arch Linux Repo installed  #########"

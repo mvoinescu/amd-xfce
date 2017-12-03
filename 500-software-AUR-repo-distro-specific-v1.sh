@@ -15,8 +15,8 @@ set -e
 
 echo "DESKTOP SPECIFIC APPLICATIONS"
 
-sh AUR/install-mugshot-v*.sh
-sh AUR/install-menulibre-v*.sh
+sh AUR-DS/install-mugshot-v*.sh
+sh AUR-DS/install-menulibre-v*.sh
 
 echo "################################################################"
 echo "####        Software from AUR Repository installed        ######"
