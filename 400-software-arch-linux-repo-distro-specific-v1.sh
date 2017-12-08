@@ -43,6 +43,7 @@ echo "Installing category Other"
 echo "Installing category System"
 
 sudo pacman -S --noconfirm --needed dmenu
+sudo pacman -S --noconfirm --needed xfce4-notifyd
 
 echo "################################################################"
 echo "####    Software from Arch Linux Repository installed     ######"
