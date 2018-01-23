@@ -47,7 +47,7 @@ echo "Installing category Internet"
 
 sh AUR/install-dropbox-v*.sh
 sh AUR/install-insync-v*.sh
-sh AUR/install-skypeforlinux-bin-v*.sh
+sh AUR/install-skypeforlinux-stable-bin-v*.sh
 sh AUR/install-vivaldi-v*.sh
 
 
