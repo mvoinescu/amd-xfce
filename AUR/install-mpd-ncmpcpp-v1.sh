@@ -63,6 +63,7 @@ sed -i 's/#filesystem_charset/filesystem_charset/g' ~/.config/mpd/mpd.conf
 echo 'audio_output {
       type  "alsa"
       name  "mpd-alsa"
+      mixer_type "software"
 }
 
 audio_output {
