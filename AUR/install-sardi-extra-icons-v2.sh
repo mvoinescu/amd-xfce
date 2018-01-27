@@ -12,7 +12,6 @@ set -e
 #   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
 #
 ##################################################################################################################
-[ -d $HOME"/.cache" ] || mkdir -p $HOME"/.cache"
 
 count=0
 
@@ -36,7 +35,7 @@ else
 	if pacman -Qi yaourt &> /dev/null; then
 
 		echo "Installing with yaourt"
-		yaourt -S --noconfirm $package --tmp ~/.cache
+		yaourt -S --noconfirm $package
 
 	elif pacman -Qi pacaur &> /dev/null; then
 
@@ -87,7 +86,7 @@ else
 	if pacman -Qi yaourt &> /dev/null; then
 
 		echo "Installing with yaourt"
-		yaourt -S --noconfirm $package --tmp ~/.cache
+		yaourt -S --noconfirm $package 
 
 
 	elif pacman -Qi pacaur &> /dev/null; then
@@ -139,7 +138,7 @@ else
 	if pacman -Qi yaourt &> /dev/null; then
 
 		echo "Installing with yaourt"
-		yaourt -S --noconfirm $package --tmp ~/.cache
+		yaourt -S --noconfirm $package
 
 
 	elif pacman -Qi pacaur &> /dev/null; then
@@ -191,7 +190,7 @@ else
 	if pacman -Qi yaourt &> /dev/null; then
 
 		echo "Installing with yaourt"
-		yaourt -S --noconfirm $package --tmp ~/.cache
+		yaourt -S --noconfirm $package
 
 
 	elif pacman -Qi pacaur &> /dev/null; then
@@ -243,7 +242,7 @@ else
 	if pacman -Qi yaourt &> /dev/null; then
 
 		echo "Installing with yaourt"
-		yaourt -S --noconfirm $package --tmp ~/.cache
+		yaourt -S --noconfirm $package
 
 
 	elif pacman -Qi pacaur &> /dev/null; then
@@ -297,7 +296,7 @@ else
 	if pacman -Qi yaourt &> /dev/null; then
 
 		echo "Installing with yaourt"
-		yaourt -S --noconfirm $package --tmp ~/.cache
+		yaourt -S --noconfirm $package
 
 
 	elif pacman -Qi pacaur &> /dev/null; then
@@ -348,7 +347,7 @@ else
 	if pacman -Qi yaourt &> /dev/null; then
 
 		echo "Installing with yaourt"
-		yaourt -S --noconfirm $package --tmp ~/.cache
+		yaourt -S --noconfirm $package
 
 
 	elif pacman -Qi pacaur &> /dev/null; then
@@ -400,7 +399,7 @@ fi
 # 	if pacman -Qi yaourt &> /dev/null; then
 #
 # 		echo "Installing with yaourt"
-# 		yaourt -S --noconfirm $package --tmp ~/.cache
+# 		yaourt -S --noconfirm $package
 #
 #
 # 	elif pacman -Qi pacaur &> /dev/null; then
@@ -452,7 +451,7 @@ fi
 # 	if pacman -Qi yaourt &> /dev/null; then
 #
 # 		echo "Installing with yaourt"
-# 		yaourt -S --noconfirm $package --tmp ~/.cache
+# 		yaourt -S --noconfirm $package
 #
 #
 # 	elif pacman -Qi pacaur &> /dev/null; then
@@ -479,7 +478,7 @@ fi
 # 	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 # 	echo "!!!!!!!!!  "$package" has NOT been installed"
 # 	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-# 
+#
 # 	fi
 #
 # fi
@@ -504,7 +503,7 @@ fi
 # 	if pacman -Qi yaourt &> /dev/null; then
 #
 # 		echo "Installing with yaourt"
-# 		yaourt -S --noconfirm $package --tmp ~/.cache
+# 		yaourt -S --noconfirm $package
 #
 #
 # 	elif pacman -Qi pacaur &> /dev/null; then
@@ -556,7 +555,7 @@ else
 	if pacman -Qi yaourt &> /dev/null; then
 
 		echo "Installing with yaourt"
-		yaourt -S --noconfirm $package --tmp ~/.cache
+		yaourt -S --noconfirm $package
 
 
 	elif pacman -Qi pacaur &> /dev/null; then
@@ -608,7 +607,7 @@ else
 	if pacman -Qi yaourt &> /dev/null; then
 
 		echo "Installing with yaourt"
-		yaourt -S --noconfirm $package --tmp ~/.cache
+		yaourt -S --noconfirm $package
 
 
 	elif pacman -Qi pacaur &> /dev/null; then
@@ -660,7 +659,7 @@ else
 	if pacman -Qi yaourt &> /dev/null; then
 
 		echo "Installing with yaourt"
-		yaourt -S --noconfirm $package --tmp ~/.cache
+		yaourt -S --noconfirm $package
 
 
 	elif pacman -Qi pacaur &> /dev/null; then
@@ -712,7 +711,7 @@ else
 	if pacman -Qi yaourt &> /dev/null; then
 
 		echo "Installing with yaourt"
-		yaourt -S --noconfirm $package --tmp ~/.cache
+		yaourt -S --noconfirm $package
 
 
 	elif pacman -Qi pacaur &> /dev/null; then
@@ -764,7 +763,7 @@ else
 	if pacman -Qi yaourt &> /dev/null; then
 
 		echo "Installing with yaourt"
-		yaourt -S --noconfirm $package --tmp ~/.cache
+		yaourt -S --noconfirm $package
 
 
 	elif pacman -Qi pacaur &> /dev/null; then
@@ -817,7 +816,7 @@ else
 	if pacman -Qi yaourt &> /dev/null; then
 
 		echo "Installing with yaourt"
-		yaourt -S --noconfirm $package --tmp ~/.cache
+		yaourt -S --noconfirm $package
 
 
 	elif pacman -Qi pacaur &> /dev/null; then
@@ -870,7 +869,7 @@ else
 	if pacman -Qi yaourt &> /dev/null; then
 
 		echo "Installing with yaourt"
-		yaourt -S --noconfirm $package --tmp ~/.cache
+		yaourt -S --noconfirm $package
 
 
 	elif pacman -Qi pacaur &> /dev/null; then
