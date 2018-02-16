@@ -68,6 +68,7 @@ echo "Installing category Multimedia"
 
 sudo pacman -S --noconfirm --needed clementine
 sudo pacman -S --noconfirm --needed deadbeef
+#sudo pacman -S --noconfirm --needed mpv
 sudo pacman -S --noconfirm --needed openshot
 sudo pacman -S --noconfirm --needed shotwell
 sudo pacman -S --noconfirm --needed simplescreenrecorder
@@ -95,6 +96,7 @@ sudo pacman -S --noconfirm --needed bleachbit
 sudo pacman -S --noconfirm --needed curl
 sudo pacman -S --noconfirm --needed dconf-editor
 sudo pacman -S --noconfirm --needed dmidecode
+sudo pacman -S --noconfirm --needed ffmpegthumbnailer
 sudo pacman -S --noconfirm --needed git
 sudo pacman -S --noconfirm --needed gksu
 sudo pacman -S --noconfirm --needed glances
@@ -135,6 +137,7 @@ sudo pacman -S --noconfirm --needed vnstat
 sudo pacman -S --noconfirm --needed wget
 sudo pacman -S --noconfirm --needed unclutter
 sudo pacman -S --noconfirm --needed rxvt-unicode
+sudo pacman -S --noconfirm --needed urxvt-perls
 sudo pacman -S --noconfirm --needed xdg-user-dirs
 #sudo pacman -S --noconfirm --needed
 

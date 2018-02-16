@@ -35,7 +35,6 @@ sudo pacman -S archmerge-termite-themes-git --noconfirm --needed
 sudo pacman -S archmerge-wallpapers-git --noconfirm --needed
 sudo pacman -S archmerge-xfce-thunar-git --noconfirm --needed
 
-
 echo "################################################################"
 echo "####     Software from ArchMerge Repository installed       ####"
 echo "################################################################"
@@ -47,7 +46,10 @@ echo "Copying all files and folders from /etc/skel to ~"
 echo "################################################################"
 echo
 cp -rT /etc/skel ~
-echo
+echo "Copying all files and folders from awesome to ~/.config"
+
+
+
 echo "################################################################"
 echo "removing all folders and files unnecessary for this dekstop from .config"
 echo "################################################################"
